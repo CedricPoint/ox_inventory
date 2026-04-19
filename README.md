@@ -145,22 +145,6 @@ setr inventory:screenblur 0
 setr inventory:ascension_clone 1
 ```
 
-## Structure utile pour une release GitHub
-
-### A conserver (runtime)
-
-- `client.lua`, `server.lua`, `init.lua`, `fxmanifest.lua`
-- `modules/`, `data/`, `locales/`
-- `web/build/`
-- `web/images/`
-
-### A ignorer pour une release "prets a ensure"
-
-- `web/node_modules/`
-- `web/src/`
-- `web/public/`
-- `ascension_ui/` (outils/scripts de support, non requis en runtime)
-
 ## Credits et liens officiels
 
 - Projet original `ox_inventory`:
