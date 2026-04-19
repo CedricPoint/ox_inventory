@@ -1,0 +1,54 @@
+# ------------------------------------------------------------
+# ox_inventory - .gitignore orienté "release FiveM"
+# ------------------------------------------------------------
+# Objectif:
+# - garder uniquement ce qui est utile au runtime serveur
+# - exclure les sources/build tools non nécessaires à l'exécution
+
+# --- Dépendances / caches front ---
+web/node_modules/
+web/.npm/
+web/.vite/
+web/coverage/
+web/dist/
+web/.eslintcache
+web/npm-debug.log*
+web/yarn-debug.log*
+web/yarn-error.log*
+web/pnpm-debug.log*
+
+# --- Sources UI non nécessaires en runtime (release prête à ensure) ---
+web/src/
+web/public/
+ascension_ui/
+web/build backup/
+web/build_backup/
+web/build-backup/
+
+# --- Scripts de dev / CI locaux ---
+*.ps1
+*.bat
+*.cmd
+
+# --- Logs / environnements ---
+*.log
+.env
+.env.*
+!.env.example
+
+# --- Binaries / archives inutiles au repo ---
+*.dll
+*.so
+*.dylib
+*.zip
+*.rar
+*.7z
+
+# --- Fichiers système / IDE ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.cursor/
